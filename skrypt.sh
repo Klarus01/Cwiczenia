@@ -16,7 +16,7 @@ then
         done
 elif [ $option == "--help" ] || [ $option == "-h" ]
 then
-        echo "--date - wyswietla aktualna date"
-        echo "--logs x - tworzy x plikow log, podstawowa wartos - 100"
-        echo "--help - wyswietla wszystkie komendy"
+        echo "--date or -d - wyswietla aktualna date"
+        echo "--logs x or -l x - tworzy x plikow log, podstawowa wartos - 100"
+        echo "--help or -h - wyswietla wszystkie komendy"
 fi
