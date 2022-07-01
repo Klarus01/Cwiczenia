@@ -14,4 +14,10 @@ then
         do
                 echo log$i, $(date), $0 >> log$i.txt
         done
+elif [ $option == "--help" ]
+then
+        echo "--date - wyswietla aktualna date"
+        echo "--logs x - tworzy x plikow log, podstawowa wartos - 100"
+        echo "--help - wyswietla wszystkie komendy"
 fi
+
