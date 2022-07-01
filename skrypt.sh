@@ -16,6 +16,17 @@ then
                 touch ./log$i/log$i.txt
                 echo log$i, $(date), $0 >> ./log$i/log$i.txt
         done
+elif [ $option == "--error" ] || [ $option == "-e" ]
+then
+        if [ -z $value ]
+        then
+                value=100
+        fi
+        for (( i = 1; i<=$value; i++ ))
+        do
+                $(mkdir error$i)
+                touch ./error$i/error$i.txt
+        done
 elif [ $option == "--help" ] || [ $option == "-h" ]
 then
         echo "--date or -d - wyswietla aktualna date"
